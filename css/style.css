@@ -1,0 +1,257 @@
+#main {
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+}
+
+body {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+  background-color: #d5d7d7;
+  text-align: center;
+}
+
+header {
+  height: 100%;
+  width: 100%;
+  max-width: 900px;
+  max-height: 400px;
+  font-weight: bold;
+  text-align: right;
+  color: #444546;
+  border-bottom: 0.25em solid #aaaeaf;
+}
+
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding:0;
+  margin:0;
+  font-family: "Roboto", sans-serif;
+}
+
+.clear-fix {
+  overflow: auto;
+}
+
+.education-entry,
+.work-entry,
+.project-entry {
+  padding: 0 5%;
+}
+
+h1 {
+  font-size: 40px;
+  color: #c0d8ed;
+  line-height: 48px;
+  display: inline;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #c0d8ed;
+  line-height: 29px;
+  padding: 10px;
+  background-color: #7e7976;
+}
+
+h3 {
+  font-style: italic;
+  font-size: 20px;
+  color: #c0d8ed;
+  line-height: 22px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 14px;
+  color: #4a4a4a;
+  line-height: 17px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  padding:10px 5%;
+
+}
+
+
+.date-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #999;
+  line-height: 16px;
+  float: left;
+}
+
+.location-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #999;
+  line-height: 16px;
+  float: right;
+
+}
+
+p {
+  font-size: 14px;
+  color: #333;
+  line-height: 21px;
+}
+
+a {
+  color: #3f3e3c;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+}
+
+.welcome-message {
+  font-style: italic;
+  font-size: 18px;
+  text-align: left;
+  color: #f3f3f3;
+  line-height: 28px;
+}
+
+#skills-h3 {
+  color: #c0d8ed;
+  display: none;
+  text-align: left;
+}
+
+.orange {
+  background-color: #7e7976;
+}
+
+.orange-text {
+  font-weight: bold;
+  color: #c0d8ed;
+}
+
+.white-text {
+  font-weight: bold;
+  color: #fff;
+}
+
+.gray {
+  background-color: #bfbcbb;
+  padding-bottom: 10px;
+  clear:both;
+}
+
+.dark-gray {
+  background-color: #3f3e3c;
+}
+
+.project-entry {
+  background-color: #bfbcbb;
+}
+
+.role {
+  color: #c0d8ed;
+}
+/* TODO: Replace with image later */
+#header {
+  background-color: #3f3e3c;
+}
+.flex-box {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.center-content {
+  padding: 2.5% 5%;
+}
+
+ul {
+  list-style-type: none;
+  color: #c0d8ed;
+}
+
+.biopic {
+  float: left;
+  padding: 10px;
+  width: 100%;
+  max-width: 200px;
+  display: none;
+}
+
+.projectPic {
+  width: 100%;
+  max-width: 400px;
+}
+
+span {
+  padding: 5px;
+}
+
+#lets-connect {
+  text-align: center;
+  background-color: #3f3e3c;
+}
+
+/* Media queries to handle various device widths */
+
+@media only screen and (max-width: 1024px) {
+  #lets-connect {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .biopic {
+    width: 175px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #lets-connect {
+    margin-top: 10%;
+  }
+  .biopic {
+    width: 150px;
+  }
+  .welcome-message {
+    display: none;
+  }
+}
+
+#map {
+  display: block;
+  height: 100%;
+  margin: 0 5%;
+}
+
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+@media only screen and (min-width: 750px) {
+  #skills-h3,
+  .biopic {
+    display: block;
+  }
+}
