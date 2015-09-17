@@ -41,7 +41,7 @@ bio.display = function() {
             for (i = 0; i < bio.skills.length; i++) {
                 var formattedSkill = HTMLskills.replace("%data%", bio.skills[i]);
                 // output skill to the header
-                $("#header").append(formattedSkill);
+                $("#header").insertAfter(formattedSkill);
             } // end of for loop
         } // end of if statement
     } // end of display function for bio object
