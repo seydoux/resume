@@ -9,7 +9,7 @@ var bio = {
         "location": "West Chester, PA"
     },
     "welcomeMessage": "Welcome to my resume!",
-    "skills": ["python", "perl", "Java"],
+    "skills": ["python", "perl", "Java", "R", "HTML", "CSS", "Linux/Unix", "mySQL"],
     "biopic": "http://i.imgur.com/RGk4R.jpg"    
 };
 // end of bio object
