@@ -172,11 +172,17 @@ a {
   background-color: #3f3e3c;
 }
 .flex-box {
+  text-align: center;
   display: -webkit-flex;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   padding: 10px;
+}
+
+.flex-item {
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .center-content {
