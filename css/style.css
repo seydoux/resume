@@ -136,6 +136,12 @@ a {
   text-align: left;
 }
 
+#skills {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
 .orange {
   background-color: #7e7976;
 }
