@@ -174,9 +174,8 @@ a {
 .flex-box {
   display: -webkit-flex;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-flow: row wrap;
+  justify-content: space-between;
   padding: 10px;
 }
 
