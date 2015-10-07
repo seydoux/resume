@@ -7,7 +7,7 @@
 
 img {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 body {
@@ -132,7 +132,7 @@ a {
 
 #skills-h3 {
   color: #c0d8ed;
-  display: none;
+  display: flex;
   text-align: left;
 }
 
@@ -172,15 +172,15 @@ a {
   background-color: #3f3e3c;
 }
 .flex-box {
-  text-align: center;
   display: -webkit-flex;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   max-width: 900px;
   font-size: 14px;
   padding: 10px;
+  float: right;
 }
 
 .flex-item {
@@ -207,7 +207,7 @@ ul {
 
 .projectPic {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 span {
@@ -230,6 +230,7 @@ span {
 @media only screen and (max-width:900px) {
   .biopic {
     width: 175px;
+    float: left;
   }
 }
 
@@ -239,6 +240,7 @@ span {
   }
   .biopic {
     width: 150px;
+    float: left;
   }
   .welcome-message {
     display: none;
@@ -260,6 +262,11 @@ span {
 @media only screen and (min-width: 750px) {
   #skills-h3,
   .biopic {
-    display: none;
+    display: flex;
+    flex-flow: row wrap;
   }
+  .biopic {
+    float: left;
+  }
+
 }

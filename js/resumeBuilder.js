@@ -38,10 +38,10 @@ bio.display = function() {
         // since skill length is variable, we walk through all of the elements in the list
         if (bio.skills.length > 0) {
             $("#header").append(HTMLskillsStart);
-            for (i = 0; i < bio.skills.length; i++) {
-                var formattedSkill = HTMLskills.replace("%data%", bio.skills[i]);
+            for (item in bio.skills) {
+                var formattedSkill = HTMLskills.replace("%data%", bio.skills[item]);
                 // output skill to the header
-                $("#header").insertAfter(formattedSkill);
+                $("#skills").prepend(formattedSkill);
             } // end of for loop
         } // end of if statement
     } // end of display function for bio object
