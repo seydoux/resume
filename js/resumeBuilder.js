@@ -54,7 +54,7 @@ var work = {
 			"title" : "Teaching Assistant",
 			"location" : "Richmond, VA",
 			"dates" : "August 2013 - December 2013",
-			"description" : "Introduced students to bioinformatics concepts,beginning python programming, programming logic, and evaluated student projects",
+			"description" : "Introduced students to bioinformatics concepts, beginning python programming, programming logic, and evaluated student projects",
 		},
 		{
 			"employer" : "Virginia Commonwealth University",
