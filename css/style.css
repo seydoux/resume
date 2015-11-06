@@ -198,7 +198,8 @@ ul {
 }
 
 .biopic {
-  float: left;
+  text-align: center;
+  float: center;
   padding: 10px;
   width: 100%;
   max-width: 200px;
@@ -230,7 +231,7 @@ span {
 @media only screen and (max-width:900px) {
   .biopic {
     width: 175px;
-    float: left;
+    float: center;
   }
 }
 
@@ -240,7 +241,7 @@ span {
   }
   .biopic {
     width: 150px;
-    float: left;
+    float: center;
   }
   .welcome-message {
     display: none;
@@ -266,7 +267,7 @@ span {
     flex-flow: row wrap;
   }
   .biopic {
-    float: left;
+    float: center;
   }
 
 }

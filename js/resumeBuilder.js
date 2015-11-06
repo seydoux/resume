@@ -9,8 +9,8 @@ var bio = {
         "location": "West Chester, PA"
     },
     "welcomeMessage": "Welcome to my resume!",
-    "skills": ["python", "perl", "Java", "R", "HTML", "CSS", "Linux/Unix", "mySQL"],
-    "biopic": "http://i.imgur.com/RGk4R.jpg"    
+    "skills": ["Skills: ", "python", "perl", "Java", "R", "HTML", "CSS", "Linux/Unix", "mySQL"],
+    "biopic": "http://i.imgur.com/vGN6jpF.jpg?1"    
 };
 // end of bio object
 
@@ -34,7 +34,7 @@ bio.display = function() {
         } // end of for loop
         //output picture and welcome message to the header
         $("#header").append(formattedBiopic);
-        $("#header").append(formattedWelcomeMsg);
+        //$("#header").append(formattedWelcomeMsg);
         // since skill length is variable, we walk through all of the elements in the list
         if (bio.skills.length > 0) {
             $("#header").append(HTMLskillsStart);
