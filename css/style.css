@@ -160,6 +160,10 @@ a {
   background-color: #3f3e3c;
 }
 
+.footerContacts {
+  background-color: #444546;
+}
+
 .project-entry {
   background-color: #bfbcbb;
 }
@@ -179,8 +183,8 @@ a {
   width: 100%;
   max-width: 900px;
   font-size: 14px;
-  padding: 10px;
   float: right;
+  background-color: #3f3e3c;
 }
 
 .flex-item {

@@ -5,7 +5,7 @@ var bio = {
     "contacts": {
         "mobile": "610-329-1492",
         "email": "seydouxMIB@gmail.com",
-        "github": "seydoux",
+        "github": ["seydoux", "#"],
         "location": "West Chester, PA"
     },
     "welcomeMessage": "Welcome to my resume!",
@@ -21,9 +21,18 @@ bio.display = function() {
         var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
         var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
         var formattedBiopic = HTMLbioPic.replace("%data%", bio.biopic);
+        var formattedConactInfo = [];
+        formattedConactInfo.push(HTMLemail.replace("%data%", bio.contacts.email));
+        formattedConactInfo.push(HTMLmobile.replace("%data%", bio.contacts.mobile));
+        formattedConactInfo.push(HTMLgithub.replace("%data%", bio.contacts.github[0]));
+        formattedConactInfo.push(HTMLlocation.replace("%data%", bio.contacts.location));
+        $("#topContacts").append(formattedConactInfo);
+        $("#footerContacts").append(formattedConactInfo);
+
         // output formatted name/role info to the header section of the html
         $("#header").prepend(formattedRole);
         $("#header").prepend(formattedName);
+        /*
         // walk through all of the contact info as we may not include every type of contact info
         for (contact in bio.contacts) {
             var formattedContact = HTMLcontactGeneric.replace("%contact%", contact).replace("%data%", bio.contacts[contact]);
@@ -32,6 +41,7 @@ bio.display = function() {
             $("#topContacts").append(formattedContact);
             $("#footerContacts").append(formattedContact);
         } // end of for loop
+        */
         //output picture and welcome message to the header
         $("#header").append(formattedBiopic);
         //$("#header").append(formattedWelcomeMsg);
